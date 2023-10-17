@@ -486,7 +486,7 @@ public class NfcPlugin extends CordovaPlugin implements NfcAdapter.OnNdefPushCom
             if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.S) { 
 
                 pendingIntent = PendingIntent.getActivity(activity, 0, intent, PendingIntent.FLAG_MUTABLE);
-            else { 
+            }else { 
                 pendingIntent = PendingIntent.getActivity(activity, 0, intent);
             }
         }
